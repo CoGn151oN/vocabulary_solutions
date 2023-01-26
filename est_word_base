@@ -1,0 +1,13 @@
+from googletrans import Translator
+
+s = '''   apology
+   until'''
+d_written = {}
+for num_id, en_words in enumerate(s.split()):
+    n = num_id
+    eng = en_words
+    est_translations = Translator().translate([eng], src='en', dest='et')
+    for es_words in est_translations:
+        est = es_words.text
+        d_written[n] = {eng: est}
+print(d_written)

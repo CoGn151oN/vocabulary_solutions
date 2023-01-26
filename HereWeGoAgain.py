@@ -1,0 +1,6 @@
+
+
+dict = {
+    "dog": "kutya"
+}
+
